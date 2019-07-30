@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6730C043-8746-4EEE-82AC-3C983720A872}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Australia_Scanner</RootNamespace>
+    <AssemblyName>Australia Scanner</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter-Flag-Australia.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Australia_Scanner.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoItX3.Assembly">
+      <HintPath>F:\Library\lib\AutoItX3.Assembly.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Library\lib\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FoxLearn.License">
+      <HintPath>F:\Library\lib\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.7.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.7.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OmegaLib">
+      <HintPath>F:\Library\lib\OmegaLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="thanhps42">
+      <HintPath>F:\Library\lib\thanhps42.dll</HintPath>
+    </Reference>
+    <Reference Include="thanhps42.BvSsh">
+      <HintPath>F:\Library\lib\thanhps42.BvSsh.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutModule\AboutAuthor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutModule\AboutAuthor.Designer.cs">
+      <DependentUpon>AboutAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event\CaculatePercentEventArgs.cs" />
+    <Compile Include="Event\LoadInfoToGridEventArgs.cs" />
+    <Compile Include="GridviewExtension.cs" />
+    <Compile Include="HomeModule\AustraliaScanner.cs" />
+    <Compile Include="HomeModule\InfoDisplayOnGridView.cs" />
+    <Compile Include="HomeModule\StartInfo.cs" />
+    <Compile Include="LicenseModule\FileCipher.cs" />
+    <Compile Include="LicenseModule\FrmLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseModule\FrmLicense.Designer.cs">
+      <DependentUpon>FrmLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseModule\LicenseInfo.cs" />
+    <Compile Include="LicenseModule\LicenseInfoController.cs" />
+    <Compile Include="LicenseModule\LicenseType.cs" />
+    <Compile Include="LicenseModule\StringCipher.cs" />
+    <Compile Include="SaveOptionModule\InfoSave.cs" />
+    <Compile Include="SaveOptionModule\SaveOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaveOptionModule\SaveOptions.Designer.cs">
+      <DependentUpon>SaveOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeModule\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeModule\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeModule\PersonalDetails.cs" />
+    <Compile Include="SSHModule\SshDetails.cs" />
+    <Compile Include="StaticClass\BvSshClient.cs" />
+    <Compile Include="StaticClass\HomeStatic.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSHModule\Ssh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSHModule\Ssh.Designer.cs">
+      <DependentUpon>Ssh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticClass\SettingStatic.cs" />
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutModule\AboutAuthor.resx">
+      <DependentUpon>AboutAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseModule\FrmLicense.resx">
+      <DependentUpon>FrmLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SaveOptionModule\SaveOptions.resx">
+      <DependentUpon>SaveOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeModule\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SSHModule\Ssh.resx">
+      <DependentUpon>Ssh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AutoItX3Lib">
+      <Guid>{F8937E53-D444-4E71-9275-35B64210CC3B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hopstarter-Flag-Australia.ico" />
+    <None Include="Resources\stop - Copy.png" />
+    <None Include="Resources\file - Copy.png" />
+    <None Include="Resources\folder - Copy.png" />
+    <None Include="Resources\youtube %283%29 - Copy.png" />
+    <None Include="Resources\home %282%29 - Copy.png" />
+    <None Include="Resources\Webp.net-resizeimage.png" />
+    <None Include="Resources\Webp.net-resizeimage.gif" />
+    <None Include="Resources\Webp.net-resizeimage %282%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %281%29.png" />
+    <None Include="Resources\webdev-about-icon.png" />
+    <None Include="Resources\waste-bin.png" />
+    <None Include="Resources\Wait-icon.png" />
+    <None Include="Resources\Used.png" />
+    <None Include="Resources\unchecked.png" />
+    <None Include="Resources\tools-cross-settings-symbol-for-interface.png" />
+    <None Include="Resources\Time-icon.png" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\Stop-red-iconx24.png" />
+    <None Include="Resources\Stop-red-icon.png" />
+    <None Include="Resources\Stop-red-icon x45.png" />
+    <None Include="Resources\Stop-red-icon %282%29.png" />
+    <None Include="Resources\Stop-red-icon %281%29.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\Start-iconx32.png" />
+    <None Include="Resources\start-icon_x45.png" />
+    <None Include="Resources\Start-icon x64.png" />
+    <None Include="Resources\Start-icon x24.png" />
+    <None Include="Resources\start x 24 chuan.png" />
+    <None Include="Resources\shopping-bag-icon.png" />
+    <None Include="Resources\Settingsx64.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\settings %282%29.png" />
+    <None Include="Resources\rubbish-bin.png" />
+    <None Include="Resources\proxifier_70307.png" />
+    <None Include="Resources\preview.png" />
+    <None Include="Resources\plus-sign-in-a-black-circle.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\plus %282%29.png" />
+    <None Include="Resources\play-button.png" />
+    <None Include="Resources\Places-network-server-database-icon.png" />
+    <None Include="Resources\Places-network-server-database-icon %281%29.png" />
+    <None Include="Resources\pause-button.png" />
+    <None Include="Resources\paper.png" />
+    <None Include="Resources\Multi-Tool-icon.png" />
+    <None Include="Resources\minus-symbol-inside-a-circle.png" />
+    <None Include="Resources\loading.png" />
+    <None Include="Resources\loading 4.png" />
+    <None Include="Resources\loading 3.png" />
+    <None Include="Resources\loading 2.png" />
+    <None Include="Resources\loading 1.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\Link-icon %281%29.png" />
+    <None Include="Resources\l4.png" />
+    <None Include="Resources\l3.png" />
+    <None Include="Resources\l2.png" />
+    <None Include="Resources\l1.png" />
+    <None Include="Resources\information-button.png" />
+    <None Include="Resources\information-button %282%29.png" />
+    <None Include="Resources\information-button %281%29.png" />
+    <None Include="Resources\Housex64.png" />
+    <None Include="Resources\Global-Network-icon.png" />
+    <None Include="Resources\gear.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\folder %282%29.png" />
+    <None Include="Resources\Firefox-icon.png" />
+    <None Include="Resources\Files-Edit-file-iconx64.png" />
+    <None Include="Resources\files-edit-file-iconx45.png" />
+    <None Include="Resources\Files-Edit-file-icon.png" />
+    <None Include="Resources\Files-Edit-file-icon  x32.png" />
+    <None Include="Resources\file-inbox.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\done-tick.png" />
+    <None Include="Resources\dollar-icon.png" />
+    <None Include="Resources\Documents-icon.png" />
+    <None Include="Resources\document-add-iconx64.png" />
+    <None Include="Resources\document-add-iconx45.png" />
+    <None Include="Resources\document-add-iconx32.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\contract.png" />
+    <None Include="Resources\close-button.png" />
+    <None Include="Resources\check-mark.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\bs2.png" />
+    <None Include="Resources\BS.png" />
+    <None Include="Resources\Bitcoin-icon.png" />
+    <None Include="Resources\bitcoin-icon ico.png" />
+    <None Include="Resources\bitcoin.png" />
+    <None Include="Resources\Apps-Dialog-Shutdown-icon.png" />
+    <None Include="Resources\Apps-Dialog-Shutdown-icon %281%29.png" />
+    <None Include="Resources\alarm-clock.png" />
+    <None Include="Resources\alarm-clock %282%29.png" />
+    <None Include="Resources\add-iconx64.png" />
+    <None Include="Resources\add-iconx45.png" />
+    <None Include="Resources\add-icon x32.png" />
+    <None Include="Resources\add-button-inside-black-circle.png" />
+    <None Include="Resources\Actions-edit-delete-iconx64.png" />
+    <None Include="Resources\Actions-edit-delete-iconx45.png" />
+    <None Include="Resources\Actions-edit-delete-icon x32.png" />
+    <None Include="Resources\Actions-edit-clear-icon.png" />
+    <None Include="Resources\Actions-edit-clear-icon %281%29.png" />
+    <None Include="Resources\25.gif" />
+    <None Include="Resources\5.gif" />
+    <None Include="Resources\youtube.png" />
+    <None Include="Resources\youtube %284%29.png" />
+    <None Include="Resources\youtube %283%29.png" />
+    <None Include="Resources\youtube %282%29.png" />
+    <None Include="Resources\youtube %281%29.png" />
+    <None Include="Resources\wrench.png" />
+    <None Include="Resources\wrench %281%29.png" />
+    <None Include="Resources\worldwide.png" />
+    <None Include="Resources\txt.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\settings %281%29.png" />
+    <None Include="Resources\sand-clock.png" />
+    <None Include="Resources\sand-clock %283%29.png" />
+    <None Include="Resources\sand-clock %282%29.png" />
+    <None Include="Resources\sand-clock %281%29.png" />
+    <None Include="Resources\rubbish.png" />
+    <None Include="Resources\rotate.png" />
+    <None Include="Resources\play-button %282%29.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\info %281%29.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home %282%29.png" />
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\file %282%29.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\brainstorm.png" />
+    <None Include="Resources\youtube %283%291.png" />
+    <None Include="Resources\home %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
