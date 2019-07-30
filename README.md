@@ -11,7 +11,7 @@ Settings
 ![alt text](https://imgur.com/VtoliIC.png)
 
 About
-![alt text](https://imgur.com/Qtisnlz.png)
+![alt text](https://imgur.com/KIzRnvC.png)
 
 
 
